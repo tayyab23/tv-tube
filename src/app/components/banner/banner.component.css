@@ -1,0 +1,35 @@
+.banner {
+    position: relative;
+}
+
+.bannerImg {
+    position: absolute;
+    width:100%;
+    height: auto;
+}
+
+.bannerTitle {
+    position: absolute;
+    color:white;
+    font-size: large;
+    background-color: none;
+    margin: 20px 0 0 20px;
+    z-index: 10;
+}
+
+.bannerText {
+    position: absolute;
+    background: rgba(0, 0, 0, 0);
+    width: 30%;
+    margin: 40px 0 0 0;
+    transition: 1s ease;
+    opacity: 0;
+    color: lightgray;
+    font-size: medium;
+    padding: 20px;
+    text-align: left;
+}
+
+.banner:hover .bannerText {
+    opacity: 1;
+  }

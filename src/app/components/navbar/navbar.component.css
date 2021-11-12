@@ -3,7 +3,6 @@
 }
 
 .navbar {
-    background: linear-gradient(270deg, rgba(6,5,5,1) 0%, rgba(50,50,50,1) 100%, rgba(0,212,255,1) 100%);
     display: flex;
     justify-content: space-between;
     align-items: center;

@@ -1,11 +1,10 @@
 import { Injectable } from '@angular/core';
 import { environment } from 'src/environments/environment';
 import { HttpClient } from '@angular/common/http'
-import { Genre } from '../interfaces/Genre';
 import { Review } from '../interfaces/Review';
-import { Title } from '../interfaces/Title';
 import { Observable } from 'rxjs';
-import { DB } from './CONSTANTS'
+import { tmdb } from './CONSTANTS'
+import { Response } from '../interfaces/Response';
 
 @Injectable({
   providedIn: 'root'
@@ -16,8 +15,8 @@ export class TitleService {
 
   constructor(private api: HttpClient) { }
 
-  getTitle(endpoint: string) : Observable<Title[]> {
-    return this.api.get<Title[]>(`${DB}${endpoint}`, {
+  getTitle(endpoint: string) : Observable<Response> {
+    return this.api.get<Response>(`${tmdb}${endpoint}`, {
       params: {
         api_key: this.api_key
       }
@@ -25,6 +24,6 @@ export class TitleService {
   }
 
   getReview(endpoint: string) : Observable<Review[]> {
-    return this.api.get<Review[]>(`${DB}`)
+    return this.api.get<Review[]>(`${tmdb}`)
   }
 }
