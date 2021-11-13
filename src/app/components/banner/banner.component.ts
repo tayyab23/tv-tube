@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Title } from '../../interfaces/Title';
 import {Subscription} from 'rxjs';
 import { TitleService } from 'src/app/services/title.service';
-import { TITLE_ENDPOINTS } from 'src/app/services/CONSTANTS'
+import { TITLE_ENDPOINTS, BACKDROP_ROOT } from 'src/app/services/CONSTANTS'
 import { Response } from 'src/app/interfaces/Response';
 
 
@@ -24,7 +24,7 @@ export class BannerComponent implements OnInit {
     this.subs.push(this.titleSrv.getTitle(TITLE_ENDPOINTS.trending).subscribe(data => {
       this.trending = data
       this.bannerTitle = data.results[0]
-      this.bannerBG = 'https://image.tmdb.org/t/p/original' + this.bannerTitle.backdrop_path;
+      this.bannerBG = BACKDROP_ROOT + this.bannerTitle.backdrop_path;
     }));
   }
 

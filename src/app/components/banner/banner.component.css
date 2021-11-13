@@ -1,9 +1,10 @@
 .banner {
     position: relative;
+    width: 100%;
+    height: auto;
 }
 
 .bannerImg {
-    position: absolute;
     width:100%;
     height: auto;
 }
@@ -13,7 +14,8 @@
     color:white;
     font-size: large;
     background-color: none;
-    margin: 20px 0 0 20px;
+    left: 20px;
+    bottom: 90%;
     z-index: 10;
 }
 
@@ -21,12 +23,12 @@
     position: absolute;
     background: rgba(0, 0, 0, 0);
     width: 30%;
-    margin: 40px 0 0 0;
+    left: 20px;
+    bottom: 80%;
     transition: 1s ease;
     opacity: 0;
     color: lightgray;
     font-size: medium;
-    padding: 20px;
     text-align: left;
 }
 
