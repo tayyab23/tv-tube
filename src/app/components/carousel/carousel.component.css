@@ -1,9 +1,5 @@
 .scrollContainer {
-    height: 300px;
+    height: 320px;
     width: 100%;
     overflow: hidden !important;
-}
-
-img {
-    height: 300px;
 }

@@ -9,6 +9,7 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { BannerComponent } from './components/banner/banner.component';
 import { CarouselComponent } from './components/carousel/carousel.component';
+import { TitleComponent } from './components/title/title.component';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { CarouselComponent } from './components/carousel/carousel.component';
     AppComponent,
     NavbarComponent,
     BannerComponent,
-    CarouselComponent
+    CarouselComponent,
+    TitleComponent
   ],
   imports: [
     BrowserModule,

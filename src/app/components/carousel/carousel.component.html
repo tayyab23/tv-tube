@@ -1,3 +1,3 @@
 <drag-scroll class="scrollContainer" [drag-scroll-y-disabled]=true>
-    <img drag-scroll-item *ngFor="let bg of titlesBG; let i = index" [src]="bg"/>
+    <app-title drag-scroll-item *ngFor="let t of titles;" [title]="t"></app-title>
 </drag-scroll>
