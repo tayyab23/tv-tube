@@ -12,6 +12,7 @@
   }
 
 .imageContainer:hover {
+    border: honeydew solid 3px;
     opacity: 0.7;
     width: 551px;
 }
