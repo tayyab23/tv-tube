@@ -9,3 +9,12 @@ export enum TITLE_ENDPOINTS {
     now_playing = '/movie/now_playing',
     upcoming = '/movie/upcoming',
 }
+
+export enum ENDPOINT_NAMES {
+    latest = 'Latest',
+    top_rated = 'Top Rated',
+    popular = 'Popular',
+    trending = 'Trending This Week',
+    now_playing = 'Now Playing',
+    upcoming = 'Coming Soon',
+}

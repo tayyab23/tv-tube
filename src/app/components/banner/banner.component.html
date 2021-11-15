@@ -1,5 +1,5 @@
-<div class="banner">
-    <img class="bannerImg" src={{bannerBG}}>
-    <p class="bannerTitle">{{bannerTitle?.title}}</p>
+<div class="banner" role="banner" tabindex="0">
+    <img aria-hidden="true" class="bannerImg" src={{bannerBG}} alt={{bannerTitle?.title}}>
+    <h3 class="bannerTitle">{{bannerTitle?.title}}</h3>
     <p class="bannerText">{{bannerTitle?.overview}}</p>
 </div>

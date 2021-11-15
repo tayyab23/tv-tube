@@ -1,5 +1,14 @@
-<div class=titleContainer (mouseover)="onMouseOver()" (mouseout)="onMouseOut()">
-    <img class="imageContainer" [src]="imgInView"/>
-    <p class="titleName">{{name}}</p>
+<div 
+    class=titleContainer
+    role="banner"
+    tabindex="0"
+    title={{name}}
+    (focus)="onMouseOver()"
+    (blur)="onMouseOut()"
+    (mouseover)="onMouseOver()"
+    (mouseout)="onMouseOut()"
+>
+    <img aria-hidden="true" class="imageContainer" [src]="imgInView" [alt]="name" />
+    <h3 class="titleName">{{name}}</h3>
     <p class="titleText">{{overview}}</p>
 </div>

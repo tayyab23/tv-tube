@@ -11,7 +11,13 @@
     transition: all 1s ease-in-out;
   }
 
-.imageContainer:hover {
+.titleContainer:hover > .imageContainer {
+    border: honeydew solid 3px;
+    opacity: 0.7;
+    width: 551px;
+}
+
+.titleContainer:focus > .imageContainer {
     border: honeydew solid 3px;
     opacity: 0.7;
     width: 551px;
@@ -45,10 +51,20 @@
     transition: all 1.5s ease-in-out;
 }
 
-.titleContainer:hover > .titleName { 
+.titleContainer:hover > .titleName {
     opacity: 1;
 }
 
-.titleContainer:hover > .titleText { 
+.titleContainer:focus > .titleName {
+    transition: none;
+    opacity: 1;
+}
+
+.titleContainer:hover > .titleText {
+    opacity: 1;
+}
+
+.titleContainer:focus > .titleText {
+    transition: none;
     opacity: 1;
 }

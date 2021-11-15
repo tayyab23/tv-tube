@@ -1,3 +1,8 @@
-<drag-scroll class="scrollContainer" [drag-scroll-y-disabled]=true>
-    <app-title drag-scroll-item *ngFor="let t of titles;" [title]="t"></app-title>
-</drag-scroll>
+<h2 class="scrollContainerHeading" tabindex="0">{{this.name}}</h2>
+<div class="scrollContainer">
+    <!-- <button class="navigationArrow" (click)="scrollLeft()">&lt;</button> -->
+    <drag-scroll class="dragScrollContainer" [id]="type" [drag-scroll-y-disabled]=true>
+        <app-title drag-scroll-item *ngFor="let t of titles;" [title]="t"></app-title>
+    </drag-scroll>
+    <!-- <button class="navigationArrow" (click)="scrollRight()">&gt;</button> -->
+</div>

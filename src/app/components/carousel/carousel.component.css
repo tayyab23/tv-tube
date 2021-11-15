@@ -2,4 +2,24 @@
     height: 320px;
     width: 100%;
     overflow: hidden !important;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.scrollContainerHeading {
+    margin-left: 10px;
+    color: #f1f1f1;
+}
+
+/* .dragScrollContainer {
+    width: calc(100% - 50px);
+} */
+
+.navigationArrow {
+    height: 320px;
+    width: 20px;
+    opacity: 0.5;
+    border-radius: 10%;
+    background-color: grey;
+    font-size: large;
 }
